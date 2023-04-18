@@ -1,3 +1,10 @@
 body{
-	background-color: #000000;
+	background-color: #DAB785;
+}
+.header{
+	position: absolute;
+	margin: -10px;
+	  background-color: #B34940;
+  height: 66px;
+  width: 1440px;
 }
