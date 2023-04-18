@@ -7,8 +7,36 @@
 </head>
 <body>
 	<header class="header">
-
+		<img id="Almaty_logo" src="img/Almaty_logo.png">
+		<p id="aboutcity" class="headerwords">О городе</p>
+		<p id="culture"class="headerwords">Культура</p>
+		<p id="news"class="headerwords">Новости</p>
+		<p id="interes"class="headerwords">Интересности</p>
+		<p id="chill"class="headerwords">Отдых</p>
 	</header>
+	<!--slider-->
+	<div class="slider">
+  		<div class="slider-container">
+   			<img src="img/Без имени.jpg" alt="Slide 1" class="slide">
+    		<img src="img/Без имени1.jpg" alt="Slide 2" class="slide">
+    		<img src="img/Без имени2.jpg" alt="Slide 3" class="slide">
+ 		 </div>
+	</div>
+	<script type="text/javascript">
+		let sliderContainer = document.querySelector(".slider-container");
+let slides = document.querySelectorAll(".slide");
+let slideIndex = 0;
+let timer = setInterval(autoSlide, 3000);
+
+function autoSlide() {
+  slideIndex++;
+  if (slideIndex >= slides.length) {
+    slideIndex = 0;
+  }
+  sliderContainer.style.transform = "translateX(-" + slideIndex * 1200 + "px)";
+}
+
+	</script>
 
 </body>
 </html>
